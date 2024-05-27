@@ -1,6 +1,6 @@
 ﻿# ResponsivePortfolio
-this is a starting point for the development of a portfolio
-##Languages
+This is a starting point for the development of a portfolio
+#Languages
 - It was developed using CSS, javascript, and native HTML
 #Next step
 - Implement react adn tailwind
