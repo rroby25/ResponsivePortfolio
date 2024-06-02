@@ -46,9 +46,9 @@ nav {
 }
 
 a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    text-decoration-color: white;
+    text-decoration-color: rgb(255, 255, 255);
 }
 a:hover {
     color: grey;
@@ -97,11 +97,12 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.308);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all;
+    transition: all;   
+    /* border: rgb(53, 53, 53) 0.1rem solid */
 }
 
 .menu-links a {
@@ -112,10 +113,12 @@ a:hover {
     color: black;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
+    /* border: rgb(53, 53, 53) 0.1rem solid */
 }
 
 .menu-links li {
     list-style: none;
+    border: rgba(53, 53, 53, 0.103) 0.1rem solid
 }
 
 .menu-links.open {
@@ -259,4 +262,57 @@ section {
 
 .bnt-container {
     gap: 1rem
+}
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
